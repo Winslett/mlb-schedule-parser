@@ -67,6 +67,17 @@ class MLB_Test < Test::Unit::TestCase
       end
     end
 
+    context "and I add the same schedule" do
+      setup do
+        @games_length = @schedule.games.length
+        @schedule.add(File.read("test/fixtures/2009-07-09.xml"))
+      end
+
+      should "have the same number of games" do
+        assert @games_length == @schedule.games.length
+      end
+    end
+
   end
 
 end

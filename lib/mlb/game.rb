@@ -25,5 +25,9 @@ module MLB
       parse(Nokogiri::HTML(args[:xml].to_s))
     end
 
+    def update(args)
+      parse(args[:xml])
+    end
+
   end
 end
