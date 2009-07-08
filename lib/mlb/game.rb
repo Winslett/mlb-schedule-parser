@@ -7,10 +7,12 @@ module MLB
       @id = xml.xpath("//scheduled-game").first.attribute("numid").to_s.to_i
 
       home_team_xml = xml.xpath("//team[@ishome='true']").first
-      @home_team = @schedule.teams.find { | team | team.id == home_team_xml.attribute("strid") } || MLB::Team.new(:xml => home_team_xml, :schedule => @schedule)
+      @home_team = @schedule.teams.find { | team | team.id == home_team_xml.attribute("strid").to_s } || MLB::Team.new(:xml => home_team_xml, :schedule => @schedule)
+      @home_team.games << self if @home_team.games.find { | game | game.id == @id }.nil?
 
       visiting_team_xml = xml.xpath("//team[@ishome='false']").first
-      @visiting_team = @schedule.teams.find { | team | team.id == visiting_team_xml.attribute("strid") } || MLB::Team.new(:xml => visiting_team_xml, :schedule => @schedule)
+      @visiting_team = @schedule.teams.find { | team | team.id == visiting_team_xml.attribute("strid").to_s } || MLB::Team.new(:xml => visiting_team_xml, :schedule => @schedule)
+      @visiting_team.games << self if @visiting_team.games.find { | game | game.id == @id }.nil?
 
       venue_xml = xml.xpath("//venue").first
       @venue = @schedule.venues.find { | venue | venue.name == venue_xml.content } || MLB::Venue.new(:xml => venue_xml, :schedule => @schedule)

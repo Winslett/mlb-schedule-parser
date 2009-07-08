@@ -1,8 +1,4 @@
-require 'rubygems'
-require 'test/unit'
-require File.dirname(__FILE__) + '/../lib/mlb'
-
-require 'shoulda'
+require File.dirname(__FILE__) + "/test_helper.rb"
 
 class MLB_Test < Test::Unit::TestCase
 
@@ -11,8 +7,16 @@ class MLB_Test < Test::Unit::TestCase
       @schedule = MLB::Schedule.new(File.read('test/fixtures/2009-07-09.xml'))
     end
 
-    should "have many games" do
-      assert @schedule.games.length > 0
+    should "have 13 games" do
+      assert_equal 13, @schedule.games.length
+    end
+
+    should "have 24 teams" do
+      assert_equal 24, @schedule.teams.length
+    end
+
+    should "have 13 venues" do
+      assert_equal 13, @schedule.venues.length
     end
 
     context "when calling the first venue" do
@@ -56,25 +60,76 @@ class MLB_Test < Test::Unit::TestCase
 
     end
 
+    context "when calling the first team" do
+      setup do
+        @team = @schedule.teams.first
+      end
+
+      should "have 1 game" do
+        assert_equal 1, @team.games.length
+        @team.games { | game | assert_kind_of MLB::Game, game } 
+      end
+    end
+
     context "when adding to the schedule" do
       setup do
         @games_length = @schedule.games.length
         @schedule.add(File.read("test/fixtures/2009-07-10.xml"))
       end
 
-      should "have more games" do
-        assert @games_length < @schedule.games.length
+      should "have 28 games" do
+        assert_equal 28, @schedule.games.length
+      end
+
+      should "have 30 teams" do
+        assert_equal 30, @schedule.teams.length
+      end
+
+      should "have 17 venues" do
+        assert_equal 17, @schedule.venues.length
+      end
+
+      context "when calling the first team" do
+        setup do
+          @team = @schedule.teams.first
+        end
+
+        should "have 2 games" do
+          assert_equal 2, @team.games.length
+          @team.games { | game | assert_kind_of MLB::Game, game } 
+        end
       end
     end
 
     context "and I add the same schedule" do
       setup do
         @games_length = @schedule.games.length
+        @teams_length = @schedule.teams.length
+        @venues_length = @schedule.venues.length
         @schedule.add(File.read("test/fixtures/2009-07-09.xml"))
       end
 
+      should "have the same number of venues" do
+        assert_equal @venues_length, @schedule.venues.length
+      end
+
       should "have the same number of games" do
-        assert @games_length == @schedule.games.length
+        assert_equal @games_length, @schedule.games.length
+      end
+
+      should "have the same number of teams" do
+        assert_equal @teams_length, @schedule.teams.length
+      end
+
+      context "when calling the first team" do
+        setup do
+          @team = @schedule.teams.first
+        end
+
+        should "have 1 games" do
+          assert_equal 1, @team.games.length
+          @team.games { | game | assert_kind_of MLB::Game, game } 
+        end
       end
     end
 
