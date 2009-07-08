@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2009 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here: http://gdx.mlb.com/components/copyright.txt-->
+<mlb-syndicated-content content="schedule">
+  <content-metadata>
+    <generated-date>2009070803:01:21</generated-date>
+  </content-metadata>
+  <schedule-set id="syndication-node-id" type="range" startRange="20-20-90">
+    <schedule-metadata>
+      <startPeriod>
+        <startPeriod>
+          <date>2009-07-20</date>
+          <time>00:00:00</time>
+        </startPeriod>
+      </startPeriod>
+      <endPeriod>
+        <endPeriod>
+          <date>2009-07-20</date>
+          <time>23:59:59</time>
+        </endPeriod>
+      </endPeriod>
+    </schedule-metadata>
+    <scheduled-game numid="245587" strid="2009/07/20/sfnmlb-atlmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>19:00:00</time>
+      </datetime>
+      <team strid="SF" isHome="false">San Francisco Giants</team>
+      <team strid="ATL" isHome="true">Atlanta Braves</team>
+      <venue>Turner Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245579" strid="2009/07/20/balmlb-nyamlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="BAL" isHome="false">Baltimore Orioles</team>
+      <team strid="NYY" isHome="true">Bronx Yankees</team>
+      <venue>Yankee Stadium</venue>
+    </scheduled-game>
+    <scheduled-game numid="245581" strid="2009/07/20/chnmlb-phimlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="CHC" isHome="false">Chicago Cubs</team>
+      <team strid="PHI" isHome="true">Philadelphia Phillies</team>
+      <venue>Citizens Bank Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245584" strid="2009/07/20/milmlb-pitmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="MIL" isHome="false">Milwaukee Brewers</team>
+      <team strid="PIT" isHome="true">Pittsburgh Pirates</team>
+      <venue>PNC Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245586" strid="2009/07/20/nynmlb-wasmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="NYM" isHome="false">New York Mets</team>
+      <team strid="WSH" isHome="true">Washington Nationals</team>
+      <venue>Nationals Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245580" strid="2009/07/20/bosmlb-texmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>20:05:00</time>
+      </datetime>
+      <team strid="BOS" isHome="false">Boston Red Sox</team>
+      <team strid="TEX" isHome="true">Arlington Rangers</team>
+      <venue>Rangers Ballpark in Arlington</venue>
+    </scheduled-game>
+    <scheduled-game numid="245588" strid="2009/07/20/slnmlb-houmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>20:05:00</time>
+      </datetime>
+      <team strid="STL" isHome="false">St. Louis Cardinals</team>
+      <team strid="HOU" isHome="true">Houston Astros</team>
+      <venue>Minute Maid Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245577" strid="2009/07/20/anamlb-kcamlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>20:10:00</time>
+      </datetime>
+      <team strid="LAA" isHome="false">Anaheim Angels</team>
+      <team strid="KC" isHome="true">Kansas City Royals</team>
+      <venue>Kauffman Stadium</venue>
+    </scheduled-game>
+    <scheduled-game numid="245589" strid="2009/07/20/tbamlb-chamlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>20:11:00</time>
+      </datetime>
+      <team strid="TB" isHome="false">Tampa Bay Rays</team>
+      <team strid="CWS" isHome="true">Chicago White Sox</team>
+      <venue>U.S. Cellular Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245578" strid="2009/07/20/arimlb-colmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>20:40:00</time>
+      </datetime>
+      <team strid="ARI" isHome="false">Phoenix Diamondbacks</team>
+      <team strid="COL" isHome="true">Denver Rockies</team>
+      <venue>Coors Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245583" strid="2009/07/20/flomlb-sdnmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>22:05:00</time>
+      </datetime>
+      <team strid="FLA" isHome="false">Miami Marlins</team>
+      <team strid="SD" isHome="true">San Diego Padres</team>
+      <venue>PETCO Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245585" strid="2009/07/20/minmlb-oakmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>22:05:00</time>
+      </datetime>
+      <team strid="MIN" isHome="false">Minneapolis Twins</team>
+      <team strid="OAK" isHome="true">Oakland Athletics</team>
+      <venue>Oakland Coliseum</venue>
+    </scheduled-game>
+    <scheduled-game numid="245582" strid="2009/07/20/cinmlb-lanmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-20</date>
+        <time>22:10:00</time>
+      </datetime>
+      <team strid="CIN" isHome="false">Cincinnati Reds</team>
+      <team strid="LAD" isHome="true">Los Angeles Dodgers</team>
+      <venue>Dodger Stadium</venue>
+    </scheduled-game>
+  </schedule-set>
+</mlb-syndicated-content>

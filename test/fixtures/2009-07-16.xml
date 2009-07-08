@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2009 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here: http://gdx.mlb.com/components/copyright.txt-->
+<mlb-syndicated-content content="schedule">
+  <content-metadata>
+    <generated-date>2009070803:01:11</generated-date>
+  </content-metadata>
+  <schedule-set id="syndication-node-id" type="range" startRange="16-20-90">
+    <schedule-metadata>
+      <startPeriod>
+        <startPeriod>
+          <date>2009-07-16</date>
+          <time>00:00:00</time>
+        </startPeriod>
+      </startPeriod>
+      <endPeriod>
+        <endPeriod>
+          <date>2009-07-16</date>
+          <time>23:59:59</time>
+        </endPeriod>
+      </endPeriod>
+    </schedule-metadata>
+    <scheduled-game numid="245530" strid="2009/07/16/nynmlb-atlmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>19:00:00</time>
+      </datetime>
+      <team strid="NYM" isHome="false">New York Mets</team>
+      <team strid="ATL" isHome="true">Atlanta Braves</team>
+      <venue>Turner Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245526" strid="2009/07/16/chnmlb-wasmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="CHC" isHome="false">Chicago Cubs</team>
+      <team strid="WSH" isHome="true">Washington Nationals</team>
+      <venue>Nationals Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245531" strid="2009/07/16/seamlb-clemlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="SEA" isHome="false">Seattle Mariners</team>
+      <team strid="CLE" isHome="true">Cleveland Indians</team>
+      <venue>Progressive Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245529" strid="2009/07/16/milmlb-cinmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>19:10:00</time>
+      </datetime>
+      <team strid="MIL" isHome="false">Milwaukee Brewers</team>
+      <team strid="CIN" isHome="true">Cincinnati Reds</team>
+      <venue>Great American Ball Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="246438" strid="2009/07/16/phimlb-flomlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>19:10:00</time>
+      </datetime>
+      <team strid="PHI" isHome="false">Philadelphia Phillies</team>
+      <team strid="FLA" isHome="true">Miami Marlins</team>
+      <venue>Land Shark Stadium</venue>
+    </scheduled-game>
+    <scheduled-game numid="245525" strid="2009/07/16/anamlb-oakmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>22:05:00</time>
+      </datetime>
+      <team strid="LAA" isHome="false">Anaheim Angels</team>
+      <team strid="OAK" isHome="true">Oakland Athletics</team>
+      <venue>Oakland Coliseum</venue>
+    </scheduled-game>
+    <scheduled-game numid="245527" strid="2009/07/16/colmlb-sdnmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>22:05:00</time>
+      </datetime>
+      <team strid="COL" isHome="false">Denver Rockies</team>
+      <team strid="SD" isHome="true">San Diego Padres</team>
+      <venue>PETCO Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245528" strid="2009/07/16/houmlb-lanmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-16</date>
+        <time>22:10:00</time>
+      </datetime>
+      <team strid="HOU" isHome="false">Houston Astros</team>
+      <team strid="LAD" isHome="true">Los Angeles Dodgers</team>
+      <venue>Dodger Stadium</venue>
+    </scheduled-game>
+  </schedule-set>
+</mlb-syndicated-content>

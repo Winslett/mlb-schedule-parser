@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2009 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here: http://gdx.mlb.com/components/copyright.txt-->
+<mlb-syndicated-content content="schedule">
+  <content-metadata>
+    <generated-date>2009070803:01:28</generated-date>
+  </content-metadata>
+  <schedule-set id="syndication-node-id" type="range" startRange="23-20-90">
+    <schedule-metadata>
+      <startPeriod>
+        <startPeriod>
+          <date>2009-07-23</date>
+          <time>00:00:00</time>
+        </startPeriod>
+      </startPeriod>
+      <endPeriod>
+        <endPeriod>
+          <date>2009-07-23</date>
+          <time>23:59:59</time>
+        </endPeriod>
+      </endPeriod>
+    </schedule-metadata>
+    <scheduled-game numid="245620" strid="2009/07/23/clemlb-tormlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>12:37:00</time>
+      </datetime>
+      <team strid="CLE" isHome="false">Cleveland Indians</team>
+      <team strid="TOR" isHome="true">Toronto Blue Jays</team>
+      <venue>Rogers Centre</venue>
+    </scheduled-game>
+    <scheduled-game numid="245624" strid="2009/07/23/sfnmlb-atlmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>13:00:00</time>
+      </datetime>
+      <team strid="SF" isHome="false">San Francisco Giants</team>
+      <team strid="ATL" isHome="true">Atlanta Braves</team>
+      <venue>Turner Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245623" strid="2009/07/23/seamlb-detmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>13:05:00</time>
+      </datetime>
+      <team strid="SEA" isHome="false">Seattle Mariners</team>
+      <team strid="DET" isHome="true">Detroit Tigers</team>
+      <venue>Comerica Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245625" strid="2009/07/23/tbamlb-chamlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>14:05:00</time>
+      </datetime>
+      <team strid="TB" isHome="false">Tampa Bay Rays</team>
+      <team strid="CWS" isHome="true">Chicago White Sox</team>
+      <venue>U.S. Cellular Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="244385" strid="2009/07/23/oakmlb-nyamlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="OAK" isHome="false">Oakland Athletics</team>
+      <team strid="NYY" isHome="true">Bronx Yankees</team>
+      <venue>Yankee Stadium</venue>
+    </scheduled-game>
+    <scheduled-game numid="244386" strid="2009/07/23/sdnmlb-phimlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="SD" isHome="false">San Diego Padres</team>
+      <team strid="PHI" isHome="true">Philadelphia Phillies</team>
+      <venue>Citizens Bank Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="244567" strid="2009/07/23/slnmlb-wasmlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>19:05:00</time>
+      </datetime>
+      <team strid="STL" isHome="false">St. Louis Cardinals</team>
+      <team strid="WSH" isHome="true">Washington Nationals</team>
+      <venue>Nationals Park</venue>
+    </scheduled-game>
+    <scheduled-game numid="245622" strid="2009/07/23/pitmlb-arimlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>21:40:00</time>
+      </datetime>
+      <team strid="PIT" isHome="false">Pittsburgh Pirates</team>
+      <team strid="ARI" isHome="true">Phoenix Diamondbacks</team>
+      <venue>Chase Field</venue>
+    </scheduled-game>
+    <scheduled-game numid="245621" strid="2009/07/23/minmlb-anamlb-1" doubleHeader="false">
+      <datetime>
+        <date>2009-07-23</date>
+        <time>22:05:00</time>
+      </datetime>
+      <team strid="MIN" isHome="false">Minneapolis Twins</team>
+      <team strid="LAA" isHome="true">Anaheim Angels</team>
+      <venue>Angel Stadium of Anaheim</venue>
+    </scheduled-game>
+  </schedule-set>
+</mlb-syndicated-content>

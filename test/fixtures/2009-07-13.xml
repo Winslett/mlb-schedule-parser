@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright 2009 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here: http://gdx.mlb.com/components/copyright.txt-->
+<mlb-syndicated-content content="schedule">
+  <content-metadata>
+    <generated-date>2009070803:01:08</generated-date>
+  </content-metadata>
+  <schedule-set id="syndication-node-id" type="range" startRange="13-20-90">
+    <schedule-metadata>
+      <startPeriod>
+        <startPeriod>
+          <date>2009-07-13</date>
+          <time>00:00:00</time>
+        </startPeriod>
+      </startPeriod>
+      <endPeriod>
+        <endPeriod>
+          <date>2009-07-13</date>
+          <time>23:59:59</time>
+        </endPeriod>
+      </endPeriod>
+    </schedule-metadata>
+  </schedule-set>
+</mlb-syndicated-content>
