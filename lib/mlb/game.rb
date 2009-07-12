@@ -18,7 +18,12 @@ module MLB
       @venue = @schedule.venues.find { | venue | venue.name == venue_xml.content } || MLB::Venue.new(:xml => venue_xml, :schedule => @schedule)
       @venue.games << self
 
-      @starts_at = Time.parse(xml.xpath("//date").first.content + " " + xml.xpath("//time").first.content)
+      @starts_at = case
+                   when xml.xpath("//time").length == 0
+                     Time.parse(xml.xpath("//date").first.content)
+                   else 
+                     Time.parse(xml.xpath("//date").first.content + " " + xml.xpath("//time").first.content)
+                   end
     end
 
     public
