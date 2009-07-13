@@ -4,7 +4,7 @@ module MLB
 
     private
     def parse(venue_xml)
-      @name = venue_xml.content
+      @name = venue_xml.inner_html
       @schedule.venues << self
     end
 

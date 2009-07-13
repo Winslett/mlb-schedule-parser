@@ -4,10 +4,10 @@ module MLB
 
     private
     def parse(xml_schedule)
-      xml_schedule = Nokogiri::HTML(xml_schedule)
+      xml_schedule = Hpricot(xml_schedule)
 
-      xml_schedule.xpath('//scheduled-game').each do | xml_game |
-        game = @games.find { | game | game.id == xml_game.attribute("numid").to_s.to_i }
+      (xml_schedule/'//scheduled-game').each do | xml_game |
+        game = @games.find { | game | game.id == xml_game.attributes["numid"].to_i }
 
         if game.nil?
           @games << MLB::Game.new(:xml => xml_game, :schedule => self)

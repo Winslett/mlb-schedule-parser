@@ -1,4 +1,4 @@
-require 'nokogiri'
+require 'hpricot'
 require 'time'
 
 module MLB
