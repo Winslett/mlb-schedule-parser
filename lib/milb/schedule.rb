@@ -4,10 +4,10 @@ module MILB
 
     private
     def parse(xml_schedule)
-      xml_schedule = Hpricot(xml_schedule)
+      xml_schedule = Nokogiri::XML(xml_schedule)
 
       (xml_schedule/'//game').each do | xml_game |
-        game = @games.find { | game | game.id == xml_game.attributes["pk"].to_i }
+        game = @games.find { | game | game.id == xml_game.attributes["pk"].value.to_i }
 
         if game.nil?
           @games << MILB::Game.new(:xml => xml_game, :schedule => self)

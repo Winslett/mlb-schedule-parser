@@ -5,8 +5,8 @@ module MILB
   private
     def parse(team_xml)
       @name = (team_xml/"//city").first.inner_html + " " + (team_xml/"//name").first.inner_html
-      @id   = team_xml.attributes["id"].to_i
-      @schedule.teams << self 
+      @id   = team_xml.attributes["id"].value.to_i
+      @schedule.teams << self
     end
 
   public

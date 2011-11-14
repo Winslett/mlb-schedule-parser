@@ -5,8 +5,8 @@ module MLB
   private
     def parse(team_xml)
       @name = team_xml.inner_html
-      @id   = team_xml.attributes["strid"]
-      @schedule.teams << self 
+      @id   = team_xml.attributes["strid"].value
+      @schedule.teams << self
     end
 
   public

@@ -1,10 +1,10 @@
-require File.dirname(__FILE__) + "/test_helper.rb"
+require File.expand_path(File.dirname(__FILE__)) + "/test_helper.rb"
 
 class MILB_Test < Test::Unit::TestCase
 
   context "An MILB schedule" do
     setup do
-      @schedule = MILB::Schedule.new(File.read('test/fixtures/schedule_01.xml'))
+      @schedule = MILB::Schedule.new(File.read(xml_path('/fixtures/schedule_01.xml')))
     end
 
     should "have 16 games" do
@@ -70,12 +70,12 @@ class MILB_Test < Test::Unit::TestCase
       end
 
       should "be named" do
-        assert_equal "Tulsa Drillers", @team.name
+        assert_equal "Midland RockHounds", @team.name
       end
 
       should "have 4 game" do
         assert_equal 4, @team.games.length
-        @team.games { | game | assert_kind_of MILB::Game, game } 
+        @team.games { | game | assert_kind_of MILB::Game, game }
       end
 
       should "have an id that is not blank" do
@@ -87,7 +87,7 @@ class MILB_Test < Test::Unit::TestCase
     context "when adding to the schedule" do
       setup do
         @games_length = @schedule.games.length
-        @schedule.add(File.read("test/fixtures/schedule_02.xml"))
+        @schedule.add(File.read(xml_path("/fixtures/schedule_02.xml")))
       end
 
       should "have 35 games" do
@@ -109,7 +109,7 @@ class MILB_Test < Test::Unit::TestCase
 
         should "have 4 games" do
           assert_equal 4, @team.games.length
-          @team.games { | game | assert_kind_of MILB::Game, game } 
+          @team.games { | game | assert_kind_of MILB::Game, game }
         end
       end
     end
@@ -119,7 +119,7 @@ class MILB_Test < Test::Unit::TestCase
         @games_length = @schedule.games.length
         @teams_length = @schedule.teams.length
         @venues_length = @schedule.venues.length
-        @schedule.add(File.read("test/fixtures/schedule_01.xml"))
+        @schedule.add(File.read(xml_path("/fixtures/schedule_01.xml")))
       end
 
       should "have the same number of venues" do
@@ -141,11 +141,10 @@ class MILB_Test < Test::Unit::TestCase
 
         should "have 4 games" do
           assert_equal 4, @team.games.length
-          @team.games { | game | assert_kind_of MILB::Game, game } 
+          @team.games { | game | assert_kind_of MILB::Game, game }
         end
       end
     end
-
   end
 
 end

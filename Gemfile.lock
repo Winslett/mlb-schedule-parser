@@ -1,0 +1,15 @@
+GEM
+  remote: http://rubygems.org/
+  remote: http://gems.github.com/
+  specs:
+    nokogiri (1.5.0)
+    shoulda (2.11.3)
+    test-unit (2.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  shoulda
+  test-unit

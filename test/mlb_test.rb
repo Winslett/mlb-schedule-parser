@@ -1,10 +1,10 @@
-require File.dirname(__FILE__) + "/test_helper.rb"
+require File.expand_path(File.dirname(__FILE__)) + "/test_helper.rb"
 
 class MLB_Test < Test::Unit::TestCase
 
   context "An MLB schedule" do
     setup do
-      @schedule = MLB::Schedule.new(File.read('test/fixtures/2009-07-09.xml'))
+      @schedule = MLB::Schedule.new(File.read(xml_path('/fixtures/2009-07-09.xml')))
     end
 
     should "have 13 games" do
@@ -67,14 +67,14 @@ class MLB_Test < Test::Unit::TestCase
 
       should "have 1 game" do
         assert_equal 1, @team.games.length
-        @team.games { | game | assert_kind_of MLB::Game, game } 
+        @team.games { | game | assert_kind_of MLB::Game, game }
       end
     end
 
     context "when adding to the schedule" do
       setup do
         @games_length = @schedule.games.length
-        @schedule.add(File.read("test/fixtures/2009-07-10.xml"))
+        @schedule.add(File.read(xml_path("/fixtures/2009-07-10.xml")))
       end
 
       should "have 28 games" do
@@ -96,7 +96,7 @@ class MLB_Test < Test::Unit::TestCase
 
         should "have 2 games" do
           assert_equal 2, @team.games.length
-          @team.games { | game | assert_kind_of MLB::Game, game } 
+          @team.games { | game | assert_kind_of MLB::Game, game }
         end
       end
     end
@@ -106,7 +106,7 @@ class MLB_Test < Test::Unit::TestCase
         @games_length = @schedule.games.length
         @teams_length = @schedule.teams.length
         @venues_length = @schedule.venues.length
-        @schedule.add(File.read("test/fixtures/2009-07-09.xml"))
+        @schedule.add(File.read(xml_path("/fixtures/2009-07-09.xml")))
       end
 
       should "have the same number of venues" do
@@ -128,11 +128,12 @@ class MLB_Test < Test::Unit::TestCase
 
         should "have 1 games" do
           assert_equal 1, @team.games.length
-          @team.games { | game | assert_kind_of MLB::Game, game } 
+          @team.games { | game | assert_kind_of MLB::Game, game }
         end
       end
     end
 
   end
+
 
 end
